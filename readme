@@ -1,0 +1,5 @@
+这个project主要是对jd商品信息进行获取
+主要文件：
+1.jdspider.py  这个文件是主要的爬虫文件主要逻辑都在这个里面实现实际引用的时候都是从里面调用的
+2.getid.py   这个文件就是通过调用jdspider.py对所需大类商品的id进行获取存入redis提供给具体爬取信息的爬虫使用
+3.rw_datebase.py    这个文件是对jdspider.py调用爬取redis里面有id的商品的信息并写入mongodb
