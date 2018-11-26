@@ -18,7 +18,7 @@ id或存入redis然后还这个Rwinfo这个类就是吧id取出然后进行访�
 
 class JdSpider:
     def __init__(self,name,frist_url,second_url):
-        self.rdb = self.rdb = redis.Redis(host='192.168.1.60',password='q135243232',db=3)
+        self.rdb = self.rdb = redis.Redis(host='192.168.1.60',password='******',db=3)
         self.goodsName = name
         self.frist_url = frist_url
         self.second_url = second_url
